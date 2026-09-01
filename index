@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="page 1.html">Page 1</a>
+  <a href="page 2.html">Page 2</a>
+  <a href="page 3.html">Page 3</a>
+  <a href="page 4.html">Page 4</a>
+  <a href="page 5.html">Page 5</a>
+  <a href="page 6.html">Page 6</a>
+  <a href="page 7.html">Page 7</a>
+</nav>
