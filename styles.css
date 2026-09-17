@@ -11,9 +11,10 @@ p {
 }
 
 body {
-  background-color: #6d4747;
+  height: 100vh;
   margin: 0;
-  padding: 20px;
+  background-image: linear-gradient(to right, #9CAF88, #F4EBD9);
+  background-attachment: fixed;
 }
 
 nav a:hover {
@@ -58,4 +59,6 @@ input[type=submit]:hover {
   margin: 20px;
   color:white;
 
+.main-nav {
+  color: rgb(245, 244, 241);
 }
