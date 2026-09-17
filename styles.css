@@ -15,3 +15,7 @@ body {
   margin: 0;
   padding: 20px;
 }
+
+nav a:hover {
+  color: #f72096;
+}
