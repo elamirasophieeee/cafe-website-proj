@@ -56,6 +56,9 @@ input[type=submit]:hover {
 .drinks {
   padding: 20px;
   margin: 20px;
-  color:white;
+  color:rgb(216, 14, 216);
+  border: #f1eded;
+  background: #2A7B9B;
+background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
 
 }
