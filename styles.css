@@ -11,7 +11,11 @@ p {
 }
 
 body {
+<<<<<<< Updated upstream
   height: 100vh;
+=======
+  background-color: radial-gradient(circle,rgba(156, 175, 136, 1) 78%, rgba(244, 235, 217, 1) 100%);
+>>>>>>> Stashed changes
   margin: 0;
 background-color: #e5d5d5;
 }
@@ -63,6 +67,8 @@ input[type=submit]:hover {
   margin: 20px;
   color:rgb(81, 114, 70);
   border: #f1eded;
+  font-size:x-large;
+  font-style: italic;
 
 
 }
