@@ -58,6 +58,8 @@ input[type=submit]:hover {
   margin: 20px;
   color:rgb(81, 114, 70);
   border: #f1eded;
+  font-size:x-large;
+  font-style: italic;
 
 }
 .main-nav {
