@@ -91,7 +91,11 @@ object-fit: cover;
 
 
 
-
+h2 {
+  color: #563c3c;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  text-align: center;
+}
 
 
 
