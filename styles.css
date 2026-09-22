@@ -217,17 +217,23 @@ body {
   color: #e8e8e8;
   margin-bottom: 8px;
 }
-
-
-
-
-
-
-
-
 <section class="hero hero--video">
 <video autoplay muted loop
 playsinline>
 <source src="Coffee.mp4">
 </video>
 <div class="hero-content">
+main h2 {
+  color: #2ee6a8;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #2a2e35;
+  padding-bottom: 8px;
+}
+main p {
+  margin-bottom: 18px;
+  color: #563c3c;
+}
+main ul, main ol {
+  margin: 0 0 20px 30px;
+  color: #563c3c;
+}
