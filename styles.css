@@ -1,106 +1,6 @@
-h1 {
-  color: #563c3c;
-  font-family: 'Times New Roman', Times, serif, sans-serif;
-  text-align: center;
-}
-
-p {
-  color: #563c3c;
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-body {
-  height: 100vh;
-  background-color: radial-gradient(circle,rgba(156, 175, 136, 1) 78%, rgba(244, 235, 217, 1) 100%);
-  margin: 0;
-background-color: #e5d5d5;
-}
-
-nav a:hover {
-  color: #f72096;
-}
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
-
-
-
-
-
-
-.drinks {
-  padding: 20px;
-  margin: 20px;
-  color:rgb(81, 114, 70);
-  border: #f1eded;
-  font-size:x-large;
-  font-style: italic;
-
-
-}
-
-
-
-
-.main-nav {
-  color: rgb(245, 244, 241);
-}
-
-
-.hero--video {
-position: relative;
-height: 600px; overflow: hidden;
-}
-.hero--video video {
-position: absolute; inset: 0;
-width: 100%; height: 100%;
-object-fit: cover;
-}
-.hero-content { z-index: 1; }
-
-
-
-h2 {
-  color: #563c3c;
-  font-family: 'Times New Roman', Times, serif, sans-serif;
-  text-align: center;
-}
-
-
-
-
-/* Reset defaults */
+/* ==========================================
+   1. RESET & DEFAULTS
+   ========================================== */
 * {
   margin: 0;
   padding: 0;
@@ -109,63 +9,108 @@ h2 {
 
 body {
   font-family: sans-serif;
+  background-color: #e5d5d5; /* Keeps your chosen solid background */
+  margin: 0;
 }
 
-/* The Parent Container */
+/* ==========================================
+   2. TYPOGRAPHY
+   ========================================== */
+h1 {
+  color: #563c3c;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #563c3c;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+p {
+  color: #563c3c;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* ==========================================
+   3. NAVIGATION
+   ========================================== */
+nav {
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  color: #563c3c;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #f72096;
+}
+
+/* ==========================================
+   4. HERO VIDEO BANNER
+   ========================================== */
 .hero {
   position: relative;
   width: 100%;
-  height: 100vh; /* Full viewport height */
+  height: 600px; /* Fixed height for video section */
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  overflow: hidden; /* Hides any video overflow */
+  overflow: hidden; 
 }
 
-/* The Background Video */
-.hero-video {
+.hero video {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Forces video to scale and fill container without stretching */
-  z-index: -1; /* Pushes the video behind the content */
+  object-fit: cover; /* Keeps video proportional and un-stretched */
+  z-index: -1; 
 }
 
-/* The Overlay (Improves text readability) */
 .hero-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4); /* Black shade with 40% opacity */
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay so white text pops */
   z-index: 0; 
 }
 
-/* The Floating Content Container */
 .hero-content {
   position: relative;
-  z-index: 1; /* Sits firmly on top of the overlay and video */
+  z-index: 1; 
   color: #ffffff;
   padding: 0 20px;
 }
 
 .hero-content h1 {
+  color: #ffffff; /* Overrides default dark brown for the hero section */
   font-size: 3rem;
   margin-bottom: 20px;
 }
 
 .hero-content p {
+  color: #ffffff; /* Overrides default dark brown for the hero section */
   font-size: 1.2rem;
   margin-bottom: 30px;
   max-width: 600px;
-  color:#fff
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Call to Action Button */
 .hero-btn {
   display: inline-block;
   padding: 12px 30px;
@@ -181,16 +126,20 @@ body {
   background-color: #e84118;
 }
 
-
+/* ==========================================
+   5. DRINK CARDS (GRID LAYOUT)
+   ========================================== */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Better sizing on mobile */
   gap: 24px;
-  margin-top: 30px;
+  margin: 40px auto;
+  max-width: 1200px; /* Prevents cards from getting wildly stretched out */
+  padding: 0 20px;
 }
 
 .card {
-  background-color: #1b1e24;
+  background-color: #1b1e24; /* Dark gray card background */
   border: 1px solid #2a2e35;
   border-radius: 8px;
   overflow: hidden;
@@ -204,8 +153,8 @@ body {
 
 .card img {
   width: 100%;
-  height: 160px;
-  object-fit: cover;
+  height: 250px; /* Increased height so drinks are clearly visible */
+  object-fit: cover; /* Prevents image distortion */
   display: block;
 }
 
@@ -218,6 +167,45 @@ body {
   margin-bottom: 8px;
 }
 
+.card-body p {
+  color: #b3b3b3; /* Lighter text color so it reads well on dark cards */
+  font-size: 15px;
+}
+
+/* ==========================================
+   6. FORMS & INPUTS
+   ========================================== */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical; 
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
 
 
 
@@ -225,9 +213,27 @@ body {
 
 
 
-<section class="hero hero--video">
-<video autoplay muted loop
-playsinline>
-<source src="Coffee.mp4">
-</video>
-<div class="hero-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
