@@ -271,3 +271,7 @@ input[type=submit]:hover {
             font-style: italic;
             line-height: 1.4;
         }
+        ol {
+  list-style-type: decimal !important;
+  padding-left: 20px;
+}
