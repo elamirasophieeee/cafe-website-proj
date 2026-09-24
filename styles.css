@@ -148,7 +148,7 @@ nav a:hover {
 
 .card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(46, 230, 168, 0.15);
+  box-shadow: #f38989;
 }
 
 .card img {
