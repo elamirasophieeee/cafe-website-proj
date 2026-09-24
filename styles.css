@@ -52,7 +52,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #8f7676;
+  color: #755a5a;
 }
 
 /* ==========================================
@@ -123,7 +123,7 @@ nav a:hover {
 }
 
 .hero-btn:hover {
-  background-color: #8f7676;
+  background-color: #755a5a;
 }
 
 /* ==========================================
@@ -223,3 +223,51 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #563c3c;
 }
+
+
+ .menu-container {
+            max-width: 650px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            border: 1px solid #e6dfd5;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-radius: 4px;
+        }
+
+        .menu-item {
+            margin: 20px 0;
+        }
+
+           .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #563c3c;
+        }
+        .item-name {
+            flex-grow: 0;
+            padding-right: 10px;
+            color: #563c3c;
+        }
+        .item-dots {
+            flex-grow: 1;
+            border-bottom: 1px dotted #ccbbaa;
+            position: relative;
+            top: -4px;
+        }
+        .item-price {
+            padding-left: 10px;
+            font-family: monospace;
+            font-size: 1.1em;
+            color: #563c3c;
+        }
+        .item-description {
+            font-size: 0.9em;
+            color: #563c3c;
+            margin-top: 5px;
+            font-style: italic;
+            line-height: 1.4;
+        }
