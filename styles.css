@@ -9,7 +9,7 @@
 
 body {
   font-family: sans-serif;
-  background-color: #e5d5d5; /* Keeps your chosen solid background */
+  background-color: #e5d5d5; /* Solid warm background matching typography */
   margin: 0;
 }
 
@@ -36,16 +36,10 @@ p {
   margin-bottom: 20px;
 }
 
-<<<<<<< Updated upstream
 /* ==========================================
    3. NAVIGATION
    ========================================== */
 nav {
-=======
-body {
-  background-color: #573b2b;
-  margin: 0;
->>>>>>> Stashed changes
   padding: 20px;
   text-align: center;
 }
@@ -172,16 +166,19 @@ nav a:hover {
   color: #e8e8e8;
   margin-bottom: 8px;
 }
+
 main h2 {
   color: #2ee6a8;
   margin-bottom: 15px;
   border-bottom: 1px solid #2a2e35;
   padding-bottom: 8px;
 }
+
 main p {
   margin-bottom: 18px;
   color: #563c3c;
 }
+
 main ul, main ol {
   margin: 0 0 20px 30px;
   color: #563c3c;
@@ -226,34 +223,3 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #45a049;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
