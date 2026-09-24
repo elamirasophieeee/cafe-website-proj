@@ -138,20 +138,20 @@ nav a:hover {
    ========================================== */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Better sizing on mobile */
   gap: 24px;
   margin: 40px auto;
-  max-width: 1200px; /* Prevents cards from getting wildly stretched out */
+  max-width: 1200px;
   padding: 0 20px;
 }
 
+/* Make standard cards responsive defaults */
 .card {
-  background-color: #1b1e24; /* Dark gray card background */
+  background-color: #1b1e24;
   border: 1px solid #2a2e35;
   border-radius: 8px;
-  overflow: hidden;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
+ 
+
+
 
 .card:hover {
   transform: translateY(-6px);
