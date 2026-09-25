@@ -138,29 +138,29 @@ nav a:hover {
    ========================================== */
 .card-grid {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive columns */
   gap: 24px;
   margin: 40px auto;
-  max-width: 1200px;
+  max-width: 1200px; /* Fixed typo from 8--px */
   padding: 0 20px;
 }
 
-/* Make standard cards responsive defaults */
 .card {
-  background-color: #1b1e24;
+  background-color: #1b1e24; /* Dark gray card background */
   border: 1px solid #2a2e35;
   border-radius: 8px;
- 
-
-
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
 
 .card:hover {
   transform: translateY(-6px);
-  box-shadow: #f38989;
+  box-shadow: 0 8px 16px rgba(243, 137, 137, 0.3); /* Turned plain color value into a real valid box shadow */
 }
 
 .card img {
   width: 100%;
-  height: 250px; /* Increased height so drinks are clearly visible */
+  height: 250px; /* Uniform height so drink images don't break grid sizing */
   object-fit: cover; /* Prevents image distortion */
   display: block;
 }
@@ -172,6 +172,13 @@ nav a:hover {
 .card-body h3 {
   color: #e8e8e8;
   margin-bottom: 8px;
+}
+
+.card-body p {
+  color: #b3b3b3; /* Lighter text color so it reads well on dark cards */
+  font-size: 15px;
+  padding: 0; /* Clears heavy generic p tags padding from ruining the card interior layout */
+  margin-bottom: 0;
 }
 
 main h2 {
@@ -189,11 +196,6 @@ main p {
 main ul, main ol {
   margin: 0 0 20px 30px;
   color: #563c3c;
-}
-
-.card-body p {
-  color: #b3b3b3; /* Lighter text color so it reads well on dark cards */
-  font-size: 15px;
 }
 
 /* ==========================================
@@ -231,71 +233,61 @@ input[type=submit]:hover {
   background-color: #563c3c;
 }
 
-
- .menu-container {
-            max-width: 650px;
-            margin: 0 auto;
-            background: #ffffff;
-            padding: 40px;
-            border: 1px solid #e6dfd5;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            border-radius: 4px;
-        }
-
-        .menu-item {
-            margin: 20px 0;
-        }
-
-           .item-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            font-weight: bold;
-            font-size: 1.1em;
-            color: #563c3c;
-        }
-        .item-name {
-            flex-grow: 0;
-            padding-right: 10px;
-            color: #563c3c;
-        }
-        .item-dots {
-            flex-grow: 1;
-            border-bottom: 1px dotted #ccbbaa;
-            position: relative;
-            top: -4px;
-        }
-        .item-price {
-            padding-left: 10px;
-            font-family: monospace;
-            font-size: 1.1em;
-            color: #563c3c;
-        }
-        .item-description {
-            font-size: 0.9em;
-            color: #563c3c;
-            margin-top: 5px;
-            font-style: italic;
-            line-height: 1.4;
-        }
-        ol {
-  list-style-type: decimal !important;
-  padding-left: 20px;
-}    
-
-
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Better sizing on mobile */
-  gap: 24px;
-  margin: 40px auto;
-  max-width: 1200px; /* Prevents cards from getting wildly stretched out */
-  padding: 0 20px;
+/* ==========================================
+   7. RESTAURAUNT MENU STYLES
+   ========================================== */
+.menu-container {
+  max-width: 650px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 40px;
+  border: 1px solid #e6dfd5;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  border-radius: 4px;
 }
 
-.card {
-  background-color: #1b1e24; /* Dark gray card background */
-  border: 1px solid #2a2e35;
-  border-radius: 8px;
-  overflow: hidden;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+.menu-item {
+  margin: 20px 0;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #563c3c;
+}
+
+.item-name {
+  flex-grow: 0;
+  padding-right: 10px;
+  color: #563c3c;
+}
+
+.item-dots {
+  flex-grow: 1;
+  border-bottom: 1px dotted #ccbbaa;
+  position: relative;
+  top: -4px;
+}
+
+.item-price {
+  padding-left: 10px;
+  font-family: monospace;
+  font-size: 1.1em;
+  color: #563c3c;
+}
+
+.item-description {
+  font-size: 0.9em;
+  color: #563c3c;
+  margin-top: 5px;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+ol {
+  list-style-type: decimal !important;
+  padding-left: 20px;
+}
